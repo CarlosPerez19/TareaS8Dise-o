@@ -7,6 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style_index.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -93,110 +96,218 @@
         </button>
       </div>
 
-      <div class="row mt-4">
-        <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
-          <div class="card mb-5 shadow-sm">
-            <a href="#"><img src="img/R (1).jpeg" alt="" class="card-img-top"></a>
-            <div class="card-body">
-              <div class="card-title">
-                <h2>Play Station 5</h2>
+       <!-- Lista de Productos -->
+    <div id="productos" class="container my-5">
+      <h2 class="text-center mb-4">Nuestros Productos</h2>
+      <div class="row">
+          <div class="col-md-4 product-card">
+              <div class="card">
+                  <img src="img/R (1).jpeg" class="card-img-top product-img" alt="Producto 1">
+                  <div class="card-body">
+                      <h5 class="card-title">PlayStation 5</h5>
+                      <p class="card-text">Ultima consola a la venta por Sony <p>
+                      <p class="card-text"><strong>$500.00</strong></p>
+                      <button type="button" class="btn btn-primary" data-toggle="modal"
+                          data-target="#producto1Modal">Más detalles</button>
+                  </div>
               </div>
-              <div class="card-text">
-                <p>
-                  Es la última consola de Sony, lanzada en 2020. Ofrece gráficos 4K, tiempos de carga rápidos con su SSD y un mando DualSense con retroalimentación háptica.
-                </p>
-              </div>
-              <p class="fw-bold">Precio Efectivo:<span class="text-danger"> $500</span></p>
-              <a href="" class="btn btn-outline-primary float-end">Comprar Ahora</a>
+          </div>
+          <div class="col-md-4 product-card">
+            <div class="card">
+                <img src="img/R (2).jpeg" class="card-img-top product-img" alt="Producto 2">
+                <div class="card-body">
+                    <h5 class="card-title">Reproductor LG</h5>
+                    <p class="card-text">Reproductos CD LG</p>
+                    <p class="card-text"><strong>$90.00</strong></p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#producto2Modal">Más detalles</button>
+                </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
-          <div class="card mb-5 shadow-sm">
-            <a href="#"><img src="img/EQUIPO PHILLIPS DE 3600 W.jpg" alt="" class="card-img-top"></a>
-            <div class="card-body">
-              <div class="card-title">
-                <h2>Equipo Phillips de 3600 W</h2>
-              </div>
-              <div class="card-text">
-                <p>
-                  Es un potente sistema de sonido, lanzado recientemente. Ofrece graves profundos, agudos claros y conectividad avanzada para una experiencia de audio envolvente.
-                </p>
-              </div>
-              <p class="fw-bold">Precio Efectivo:<span class="text-danger"> $650</span></p>
-              <a href="#" class="btn btn-outline-primary float-end">Comprar Ahora</a>
+          <div class="col-md-4 product-card">
+            <div class="card">
+                <img src="img/pc-gamer-curso-total.jpg" class="card-img-top product-img" alt="Producto 1">
+                <div class="card-body">
+                    <h5 class="card-title">PC Gamer</h5>
+                    <p class="card-text">PC Gamer Gama Alta</p>
+                    <p class="card-text"><strong>$900.00</strong></p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#producto3Modal">Más detalles</button>
+                </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
-          <div class="card mb-5 shadow-sm">
-            <a href="#"><img src="img/gaming-room-lit-purple_674594-18476.avif" alt="" class="card-img-top"></a>
-            <div class="card-body">
-              <div class="card-title">
-                <h2>PC Gamer</h2>
-              </div>
-              <div class="card-text">
-                <p>
-                  Es una computadora de alto rendimiento para videojuegos. Equipado con procesadores potentes, tarjetas gráficas avanzadas y SSD rápido, ofrece gráficos impresionantes y juego fluido.
-                </p>
-              </div>
-              <p class="fw-bold">Precio Efectivo:<span class="text-danger"> $1300</span></p>
-              <a href="" class="btn btn-outline-primary float-end">Comprar Ahora</a>
+          <div class="col-md-4 product-card">
+            <div class="card">
+                <img src="img/R.jpeg" class="card-img-top product-img" alt="Producto 1">
+                <div class="card-body">
+                    <h5 class="card-title">Smart TV</h5>
+                    <p class="card-text">Smart TV Samsung</p>
+                    <p class="card-text"><strong>$300.00</strong></p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#producto4Modal">Más detalles</button>
+                </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
-          <div class="card mb-5 shadow-sm">
-            <a href="#"><img src="img/R.jpeg" alt="" class="card-img-top"></a>
-            <div class="card-body">
-              <div class="card-title">
-                <h2>Smart TV Samsung 4k Oled</h2>
-              </div>
-              <div class="card-text">
-                <p>
-                  Es un televisor de última generación. Ofrece resolución 4K, tecnología OLED para colores vivos y negros profundos, y funcionalidades inteligentes para acceder a diversas aplicaciones.
-                </p>
-              </div>
-              <p class="fw-bold">Precio Efectivo:<span class="text-danger"> $900</span></p>
-              <a href="#" class="btn btn-outline-primary float-end">Comprar Ahora</a>
+          <div class="col-md-4 product-card">
+            <div class="card">
+                <img src="img/EQUIPO PHILLIPS DE 3600 W.jpg" class="card-img-top product-img" alt="Producto 1">
+                <div class="card-body">
+                    <h5 class="card-title">Equipo de Sonido</h5>
+                    <p class="card-text">Equipo de sonido alta definicion.</p>
+                    <p class="card-text"><strong>$150.00</strong></p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#producto5Modal">Más detalles</button>
+                </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="card mb-5 shadow-sm">
-            <a href="#"><img src="img/pasted image 0.png" alt="" class="card-img-top"></a>
-            <div class="card-body">
-              <div class="card-title">
-                <h2>Línea Blanca</h2>
-              </div>
-              <div class="card-text">
-                <p>
-                  Incluye electrodomésticos esenciales para el hogar, como refrigeradores y lavadoras. Diseñados para eficiencia y comodidad, con tecnología avanzada para mejorar el rendimiento y reducir el consumo energético.
-                </p>
-              </div>
-              <p class="fw-bold">Precio Efectivo:<span class="text-danger"> $400</span></p>
-              <a href="#" class="btn btn-outline-primary float-end">Comprar Ahora</a>
+          <div class="col-md-4 product-card">
+            <div class="card">
+                <img src="img/gaming-room-lit-purple_674594-18476.avif" class="card-img-top product-img" alt="Producto 1">
+                <div class="card-body">
+                    <h5 class="card-title">PC Gamer</h5>
+                    <p class="card-text">Pc Gamer Gama Media</p>
+                    <p class="card-text"><strong>$450.00</strong></p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#producto6Modal">Más detalles</button>
+                </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
-          <div class="card mb-5 shadow-sm">
-            <a href="#"><img src="img/R (2).jpeg" alt="" class="card-img-top"></a>
-            <div class="card-body">
-              <div class="card-title">
-                <h2>Blue-Ray LG</h2>
-              </div>
-              <div class="card-text">
-                <p>
-                  Es un reproductor de alta definición. Ofrece soporte para discos Blu-ray y DVD, con capacidad de reproducir contenido en 4K Ultra HD y funciones inteligentes como conectividad Wi-Fi y acceso a aplicaciones de streaming.
-                </p>
-              </div>
-              <p class="fw-bold">Precio Efectivo:<span class="text-danger"> $250</span></p>
-              <a href="#" class="btn btn-outline-primary float-end">Comprar Ahora</a>
-            </div>
-          </div>
-        </div>
       </div>
+  </div>
+
+  <!-- Modal de Producto -->
+  <div class="modal fade" id="producto1Modal" tabindex="-1" aria-labelledby="producto1ModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="producto1ModalLabel">Consola</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <img src="img/R (1).jpeg" class="img-fluid mb-3" alt="Consola">
+                  <p>Consola PlayStation 5</p>
+                  <p><strong>Precio: $500.00</strong></p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Agregar al carrito</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="modal fade" id="producto2Modal" tabindex="-1" aria-labelledby="producto2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="producto1ModalLabel">Reproductor</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img/R (2).jpeg" class="img-fluid mb-3" alt="Consola">
+                <p>Reproductor DVD/CD LG</p>
+                <p><strong>Precio: $90.00</strong></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="producto3Modal" tabindex="-1" aria-labelledby="producto2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="producto3ModalLabel">PC</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img/pc-gamer-curso-total.jpg" class="img-fluid mb-3" alt="Consola">
+                <p>Componentes: Ryzen 7 7700x, Rtx 4080, 64GB RAM, SSD M.2 1TB</p>
+                <p><strong>Precio: $900.00</strong></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="producto4Modal" tabindex="-1" aria-labelledby="producto2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="producto3ModalLabel">TV</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img/R.jpeg" class="img-fluid mb-3" alt="Consola">
+                <p>Smart TV Samsung 40 pulgadas</p>
+                <p><strong>Precio: $300.00</strong></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="producto5Modal" tabindex="-1" aria-labelledby="producto2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="producto3ModalLabel">Sonido</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img/EQUIPO PHILLIPS DE 3600 W.jpg" class="img-fluid mb-3" alt="Consola">
+                <p>Equipo de sonido alta definicion</p>
+                <p><strong>Precio: $150.00</strong></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="producto6Modal" tabindex="-1" aria-labelledby="producto2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="producto3ModalLabel">PC</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img/gaming-room-lit-purple_674594-18476.avif" class="img-fluid mb-3" alt="Consola">
+                <p>Componentes: Ryzen 5 5600x, RX 580 8GB, 16GB RAM, SSD 500GB</p>
+                <p><strong>Precio: $450.00</strong></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
     </div>
 
     <footer class="bg-primary text-white">
